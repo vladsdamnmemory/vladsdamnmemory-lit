@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "ES6"
+    ],
+    "strict": true,
+    "outDir": "js",
+    "removeComments": true,
+    "pretty": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020"
+  },
+  "files": [
+    "src/index.ts"
+  ]
+}
