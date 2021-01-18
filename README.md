@@ -1,6 +1,6 @@
 # _that's_ Lit!
 
-Build modern user friendly inte4rfaces easy with Lit.
+Build modern user friendly interfaces easy with Lit.
 
 ### XStickyScroll _(class)_
 
