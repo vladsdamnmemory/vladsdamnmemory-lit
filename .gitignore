@@ -1,5 +1,5 @@
 /test/
 /.idea/
-
+.DS_Store
 lit-ts.iml
 /node_modules/
