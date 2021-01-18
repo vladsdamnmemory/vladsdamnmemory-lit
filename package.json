@@ -1,6 +1,6 @@
 {
   "name": "vladsdamnmemory-lit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "DOM is compliant. Build user friendly interfaces with \"lit\".",
   "main": "./lit/index.js",
   "private": false,

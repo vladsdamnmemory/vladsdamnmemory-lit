@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XStickyScroll</title>
+    <script src="https://unpkg.com/vladsdamnmemory-lit@latest/lit/browser/index.js"></script>
+    <style type="text/css">
+        .scroll-style::-webkit-scrollbar {
+            background-color: #f9faff;
+        }
+
+        .scroll-style::-webkit-scrollbar {
+            width: 25px;
+            height: 25px;
+        }
+
+        .scroll-style::-webkit-scrollbar-thumb {
+            border-radius: 30px;
+            background-color: #fcabce;
+            height: 40px;
+            border: 8px solid transparent;
+            background-clip: content-box;
+        }
+
+        .scroll-style::-webkit-scrollbar-track-piece {
+            background: #b6bdcb;
+            border-radius: 30px;
+            border: 12px solid transparent;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+<div style="max-width: 500px">
+    <div>
+        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+        corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+        culpa
+        qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et
+        expedita
+        distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+        maxime
+        placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et
+        aut
+        officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
+        recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+        consequatur aut perferendis doloribus asperiores repellat."
+    </div>
+    <div id="log" style="width: 300px">
+        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+        corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+        culpa
+        qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et
+        expedita
+        distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+        maxime
+        placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et
+        aut
+        officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
+        recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+        consequatur aut perferendis doloribus asperiores repellat."
+    </div>
+    <div>
+        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+        corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+        culpa
+        qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et
+        expedita
+        distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+        maxime
+        placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et
+        aut
+        officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
+        recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+        consequatur aut perferendis doloribus asperiores repellat."
+    </div>
+</div>
+
+<script>
+    let stickyScroll = new lit.XStickyScroll(document.getElementById("log"), "scroll-style");
+</script>
+</body>
+</html>
