@@ -13,5 +13,6 @@
     "DOM"
   ],
   "author": "vladsdamnmemory",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": "https://github.com/vladsdamnmemory/lit.git"
 }
