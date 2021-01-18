@@ -9,7 +9,7 @@ DOM is compliant. Build modern user-friendly interfaces easily with Lit:
 * Extendable;
 * Less code more functionality.
 
-# _`contents`_:
+## Contents
 
 * [XStickyScroll](https://jsfiddle.net/91s8ngru/)
 
