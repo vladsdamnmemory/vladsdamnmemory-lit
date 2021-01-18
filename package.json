@@ -1,0 +1,17 @@
+{
+  "name": "lit",
+  "version": "1.0.0",
+  "description": "DOM is compliant. Build user friendly interfaces with \"lit\".",
+  "main": "./lit/index.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "DOM"
+  ],
+  "author": "vladsdamnmemory",
+  "license": "ISC"
+}
