@@ -1,6 +1,8 @@
 # _that's_ Lit!
 
-Build modern user friendly interfaces easy with Lit.
+`vladsdamnmemory`
+
+DOM is compliant. Build modern user friendly interfaces easy with Lit.
 
 ### XStickyScroll _(class)_
 
