@@ -20,7 +20,7 @@ First specify the available width for block. Sometimes it's optional, depends on
 Next add some code
 
 ```javascript
-import {XStickyScroll} from "lit";
+import {XStickyScroll} from "vladsdamnmemory-lit";
 
 let scrollManager = new XStickyScroll(document.getElementById("log"), "scrollbar-class");
 
