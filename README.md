@@ -9,6 +9,16 @@ provided element by yourself.
 
 #### Usage
 
+First specify the available width for block. Sometimes it's optional, depends on your layout.
+
+```html
+<!-- html snippet -->
+
+<div id="log" style="width: 500px">lorem ipsum... plus many many lines</div>
+```
+
+Next add some code
+
 ```javascript
 import {XStickyScroll} from "lit";
 
