@@ -100,7 +100,6 @@ Tracks the current visible section of document and connects it to the navigation
 * private readonly nodes;
 * private readonly menuItems;
 * private readonly setActive;
-* private readonly scrollIntoView;
 * private readonly enableClickListeners;
 * private readonly topOffset;
 * refresh(): void;
