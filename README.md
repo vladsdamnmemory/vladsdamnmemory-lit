@@ -12,6 +12,7 @@ DOM is compliant. Build modern user-friendly interfaces easily with Lit:
 ## Contents
 
 * [XStickyScroll](https://jsfiddle.net/91s8ngru/)
+* [ViewportWatcher](https://jsfiddle.net/0gkheuj9/)
 
 ## Installation
 
@@ -51,14 +52,16 @@ import {XStickyScroll} from "vladsdamnmemory-lit";
 Eliminates the need for a vertical scroll in a block. Useful for a log or code reading. It adds a scrollbar to a
 provided element.
 
-* @param host: HTMLElement - Node to which scrollbar is applied
-* @param scrollBarClass?: String - Style class for the scrollbar
+`constructor(host: HTMLElement, scrollBarClass: String);`
+
+* host: HTMLElement (Node to which scrollbar is applied)
+* scrollBarClass: String (Style class for the scrollbar)
 
 #### Quick demo
 
 https://jsfiddle.net/91s8ngru/
 
-#### Usage
+**Usage**
 
 First specify the available width for the block. Sometimes it's optional, depends on your layout.
 
@@ -86,6 +89,73 @@ let scrollManager = new lit.XStickyScroll(document.getElementById("log"), "scrol
 
 // Unbinds event listeners and removes extra objects
 scrollManager.destroy(); // Call it on framework hooks onDestroy/beforeDestroy etc.
+```
+
+### ViewportWatcher _(@class)_
+
+Tracks the current visible section of document for user and connects it to the navigation items.
+
+`constructor(nodes: HTMLCollection | NodeList, menuItems: HTMLCollection | NodeList, topOffset?: number, enableClickListeners?: boolean);`
+
+* private readonly nodes;
+* private readonly menuItems;
+* private readonly setActive;
+* private readonly scrollIntoView;
+* private readonly enableClickListeners;
+* private readonly topOffset;
+* refresh(): void;
+* reconstruct(nodes: HTMLCollection | NodeList, menuItems: HTMLCollection | NodeList, topOffset?: number,
+  enableClickListeners?: boolean): ViewportWatcher;
+* destroy(): void.
+
+Use `.reconstruct()` after changing the DOM, when there are new or removed blocks.
+
+Destroy instance by running the method `.destroy()`.
+
+Make ViewportWatcher instance forcibly recalculate everything with `.refresh()` method.
+
+#### Quick demo
+
+https://jsfiddle.net/0gkheuj9/
+
+**Usage**
+
+Sweet sweet javascript:
+
+```html
+<!-- When using right away in the browser -->
+<script>
+    let viewportWatcher;
+    window.addEventListener("load", function () {
+        let nodes, menuItems;
+        nodes = document.querySelectorAll(".block"); // Collect all blocks
+        menuItems = document.querySelectorAll(".menu-item"); // Collect all menu items
+
+        viewportWatcher = new lit.ViewportWatcher(
+                nodes, // Articles, sections, divs or something (any blocks)
+                menuItems, // Navigation items
+                parseInt(getComputedStyle(document.getElementById("nav")).getPropertyValue("height")), // Extra offset if you've got header on a page fixed to top
+                true // Enable click event listeners to scroll into view
+        );
+    }, false);
+</script>
+```
+
+ES6 approach and frameworks:
+
+```javascript
+import {ViewportWatcher} from "vladsdamnmemory-lit";
+
+/**
+ * Assume that we already have some data about the HTML Elements
+ */
+
+let viewportWatcher = new ViewportWatcher(
+    nodes, // Articles, sections, divs or something (any blocks)
+    menuItems, // Navigation items
+    parseInt(getComputedStyle(document.getElementById("nav")).getPropertyValue("height")), // Extra offset if you've got header on a page fixed to top
+    true // Enable click event listeners to scrol into view
+);
 ```
 
 ___
