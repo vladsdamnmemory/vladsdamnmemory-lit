@@ -93,7 +93,7 @@ scrollManager.destroy(); // Call it on framework hooks onDestroy/beforeDestroy e
 
 ### ViewportWatcher _(@class)_
 
-Tracks the current visible section of document for user and connects it to the navigation items.
+Tracks the current visible section of document and connects it to the navigation item.
 
 `constructor(nodes: HTMLCollection | NodeList, menuItems: HTMLCollection | NodeList, topOffset?: number, enableClickListeners?: boolean);`
 
