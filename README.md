@@ -119,7 +119,7 @@ https://jsfiddle.net/vladsdamnmemory/q7vnaykp/3/
 
 **Usage**
 
-Sweet sweet javascript:
+Sweet-sweet javascript:
 
 ```html
 <!-- When using right away in the browser -->
@@ -133,7 +133,7 @@ Sweet sweet javascript:
         viewportWatcher = new lit.ViewportWatcher(
                 nodes, // Articles, sections, divs or something (any blocks)
                 menuItems, // Navigation items
-                parseInt(getComputedStyle(document.getElementById("nav")).getPropertyValue("height")), // Extra offset if you've got header on a page fixed to top
+                document.getElementById("nav").getBoundingClientRect().height, // Extra offset if you've got header on a page fixed to the top
                 true // Enable click event listeners to scroll into view
         );
     }, false);
@@ -152,7 +152,7 @@ import {ViewportWatcher} from "vladsdamnmemory-lit";
 let viewportWatcher = new ViewportWatcher(
     nodes, // Articles, sections, divs or something (any blocks)
     menuItems, // Navigation items
-    parseInt(getComputedStyle(document.getElementById("nav")).getPropertyValue("height")), // Extra offset if you've got header on a page fixed to top
+    document.getElementById("nav").getBoundingClientRect().height, // Extra offset if you've got header on a page fixed to the top
     true // Enable click event listeners to scrol into view
 );
 ```
