@@ -12,7 +12,7 @@ DOM is compliant. Build modern user-friendly interfaces easily with Lit:
 ## Contents
 
 * [XStickyScroll](https://jsfiddle.net/91s8ngru/)
-* [ViewportWatcher](https://jsfiddle.net/0gkheuj9/)
+* [ViewportWatcher](https://jsfiddle.net/vladsdamnmemory/q7vnaykp/3/)
 
 ## Installation
 
@@ -115,7 +115,7 @@ Make ViewportWatcher instance forcibly recalculate everything with `.refresh()` 
 
 #### Quick demo
 
-https://jsfiddle.net/0gkheuj9/
+https://jsfiddle.net/vladsdamnmemory/q7vnaykp/3/
 
 **Usage**
 
