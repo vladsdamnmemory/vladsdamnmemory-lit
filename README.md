@@ -1,6 +1,11 @@
 # _that's_ Lit!
 
 _&copy; vladsdamnmemory_
+> Please stay tuned for updates! Usually I publish new versions of this package frequently
+
+* `XStickyScroll` has got a smoother scroll behaviour in version 1.1.3
+
+___
 
 DOM is compliant. Build modern user-friendly interfaces easily with Lit:
 
